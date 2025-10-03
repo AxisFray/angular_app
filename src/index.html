@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>API Demo - JSONPlaceholder</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        max-width: 600px;
+        margin: auto;
+      }
+      input,
+      button {
+        padding: 8px;
+        margin: 5px 0;
+      }
+      button {
+        cursor: pointer;
+      }
+      #output {
+        margin-top: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #f9f9f9;
+        white-space: pre-wrap; /* zachowuje łamanie linii */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JSONPlaceholder API – demo</h1>
+
+    <input
+      id="inputText"
+      type="text"
+      placeholder="Wpisz ID lub treść"
+      size="40"
+    />
+    <br />
+    <button id="btnGet">WYSZUKAJ (GET)</button>
+    <button id="btnPost">DOPISZ (POST)</button>
+    <button id="btnDelete">USUŃ (DELETE)</button>
+
+    <div id="output">Tutaj pojawią się wyniki...</div>
+  </body>
+</html>
