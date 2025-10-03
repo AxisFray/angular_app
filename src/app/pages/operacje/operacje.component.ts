@@ -14,8 +14,8 @@ export class OperacjeComponent {
   link_do_API = 'https://jsonplaceholder.typicode.com/posts';
 
   // ---- GET: wyszukiwanie posta po ID ----
-  async wezWpis() {
-    const id = jakie_dane.value.trim();
+  async getPost() {
+    const id = this.jakie_dane.value.trim();
     if (!id) {
       this.co_znalazlem.innerText = 'Podaj ID posta do wyszukania!';
       return;
